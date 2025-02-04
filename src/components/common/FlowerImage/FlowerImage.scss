@@ -1,0 +1,20 @@
+.root {
+  position: absolute;
+  height: auto;
+}
+
+.rootLeft {
+  left: calc(-1 * var(--grid-padding-mobile));
+
+  @media (--mobile-large) {
+    left: calc(-1 * var(--grid-padding));
+  }
+}
+
+.rootRight {
+  right: calc(-1 * var(--grid-padding-mobile));
+
+  @media (--mobile-large) {
+    right: calc(-1 * var(--grid-padding));
+  }
+}

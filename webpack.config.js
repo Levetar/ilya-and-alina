@@ -56,26 +56,18 @@ module.exports = {
         ],
       },
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
         type: 'asset/resource',
-        use: [
-          {
-            options: {
-              outputPath: 'images',
-            },
-          },
-        ],
+        generator: {
+          filename: 'assets/images/[name].[hash][ext]',
+        },
       },
       {
-        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-        type: 'asset/inline',
-        use: [
-          {
-            options: {
-              outputPath: 'fonts',
-            },
-          },
-        ],
+        test: /\.(woff(2)?|eot|ttf|otf|)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name][ext]',
+        },
       },
     ],
   },

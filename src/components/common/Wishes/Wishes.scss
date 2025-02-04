@@ -1,0 +1,83 @@
+@import '../../../styles/typography.css';
+
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imageFlower3 {
+  top: -184px;
+  transform: scaleX(-1);
+  width: 162px;
+}
+
+.imageFlower2 {
+  bottom: -114px;
+  transform: scaleX(-1);
+  width: 108px;
+}
+
+.title {
+  composes: font-great-vibes;
+  position: relative;
+  margin-bottom: 6px;
+  font-size: 40px;
+  line-height: 1;
+
+  @media (--mobile-large) {
+    margin-bottom: 12px;
+    font-size: 60px;
+  }
+}
+
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & + & {
+    margin-top: 29px;
+  }
+}
+
+.itemTitle {
+  composes: font-fira-sans-regular;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1;
+  white-space: break-spaces;
+
+  @media (--mobile-large) {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+.itemDescription {
+  composes: font-fira-sans-light;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (--mobile-large) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  & + & {
+    margin-top: 14px;
+
+    @media (--mobile-large) {
+      margin-top: 22px;
+    }
+  }
+}

@@ -1,0 +1,234 @@
+@import '../../../styles/typography.css';
+
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imageFlower1 {
+  top: -99px;
+  transform: scaleX(-1);
+  width: 131px;
+}
+
+.imageFlower4 {
+  top: 155px;
+  transform: scaleX(-1);
+  width: 92px;
+}
+
+.imageFlower5 {
+  bottom: -29px;
+  width: 162px;
+}
+
+.title {
+  composes: font-great-vibes;
+  position: relative;
+  margin-bottom: 6px;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+
+  @media (--mobile-large) {
+    margin-bottom: 12px;
+    font-size: 60px;
+  }
+}
+
+.description {
+  composes: font-fira-sans-light;
+  position: relative;
+  margin-bottom: 23px;
+  max-width: 240px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (--mobile-large) {
+    max-width: 310px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.form {
+  position: relative;
+  margin-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item {
+  margin-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.labelText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.itemTitle {
+  composes: font-fira-sans-regular;
+  margin-bottom: 23px;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (--mobile-large) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.input {
+  composes: font-fira-sans-regular;
+  padding: 2px 10px;
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid rgba(57, 57, 57, 0.7);
+  border-radius: 30px;
+}
+
+.labelRadio,
+.labelCheckbox {
+  composes: font-fira-sans-light;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (--mobile-large) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.labelRadio {
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.labelCheckbox {
+  & + & {
+    margin-top: 18px;
+  }
+}
+
+.radio,
+.checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.customRadio {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid rgba(57, 57, 57, 0.7);
+}
+
+.radio:checked + .customRadio::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(57, 57, 57, 0.7);
+}
+
+.customCheckbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(57, 57, 57, 0.7);
+}
+
+.checkbox:checked + .customCheckbox::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: rgba(57, 57, 57, 0.7);
+}
+
+.formTitle {
+  composes: font-fira-sans-regular;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (--mobile-large) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.submit {
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 211px;
+  height: 44px;
+  text-decoration: none;
+  color: var(--button-color);
+  background-color: var(--button-background);
+  border-radius: 30px;
+  transition: initial;
+
+  @media (pointer: fine) {
+    transition: background-color .2s linear;
+  }
+
+  &:hover {
+    @media (pointer: fine) {
+      background-color: var(--button-background-hover);
+    }
+  }
+
+  &:active {
+    background-color: var(--button-background-hover);
+  }
+}
+
+.endText {
+  composes: font-fira-sans-regular;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (--mobile-large) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
