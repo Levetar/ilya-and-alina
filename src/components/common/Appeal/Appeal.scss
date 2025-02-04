@@ -1,0 +1,39 @@
+@import '../../../styles/typography.css';
+
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.image {
+  top: -31px;
+  width: 131px;
+}
+
+.title {
+  composes: font-great-vibes;
+  margin-bottom: 28px;
+  font-size: 44px;
+  line-height: 1;
+
+  @media (--mobile-large) {
+    margin-bottom: 48px;
+    font-size: 64px;
+  }
+}
+
+.description {
+  composes: font-fira-sans-regular;
+  font-size: 18px;
+  line-height: 27px;
+  white-space: break-spaces;
+
+  @media (--mobile-large) {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}

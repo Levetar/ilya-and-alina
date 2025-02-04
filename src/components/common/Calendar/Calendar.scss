@@ -1,0 +1,149 @@
+@import '../../../styles/typography.css';
+
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imageFlower2 {
+  top: -43px;
+  width: 108px;
+}
+
+.imageFlower3 {
+  bottom: -148px;
+  width: 162px;
+}
+
+.title {
+  composes: font-great-vibes;
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 44px;
+  line-height: 1;
+  text-align: center;
+
+  @media (--mobile-large) {
+    margin-bottom: 12px;
+    font-size: 64px;
+  }
+}
+
+.descriptionWrapper {
+  position: relative;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (--mobile-large) {
+    margin-bottom: 18px;
+  }
+}
+
+.description {
+  composes: font-fira-sans-regular;
+  font-size: 18px;
+  line-height: 27px;
+  white-space: break-spaces;
+
+  @media (--mobile-large) {
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  & + & {
+    margin-top: 20px;
+
+    @media (--mobile-large) {
+      margin-top: 34px;
+    }
+  }
+}
+
+.calendarTitle {
+  composes: font-great-vibes;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (--mobile-large) {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.calendarWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 258px;
+}
+
+.calendarHeader {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.calendarHeaderItem {
+  composes: font-fira-sans-regular;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+.calendarDays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.calendarWeek {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  & + & {
+    margin-top: 8px;
+  }
+}
+
+.calendarDay {
+  composes: font-fira-sans-regular;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.imageHeart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(4px);
+  width: 56px;
+  height: auto;
+}
+
+.calendarDaySpan {
+  position: relative;
+}

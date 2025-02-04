@@ -1,0 +1,78 @@
+@import '../../../styles/typography.css';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  composes: font-great-vibes;
+  position: relative;
+  margin-bottom: 6px;
+  font-size: 40px;
+  line-height: 1;
+
+  @media (--mobile-large) {
+    margin-bottom: 12px;
+    font-size: 60px;
+  }
+}
+
+.descriptionWrapper {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.description {
+  composes: font-fira-sans-light;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (--mobile-large) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  & + & {
+    margin-top: 14px;
+
+    @media (--mobile-large) {
+      margin-top: 22px;
+    }
+  }
+}
+
+.link {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 211px;
+  height: 44px;
+  text-decoration: none;
+  color: var(--button-color);
+  background-color: var(--button-background);
+  border-radius: 30px;
+  transition: initial;
+
+  @media (pointer: fine) {
+    transition: background-color .2s linear;
+  }
+
+  &:hover {
+    @media (pointer: fine) {
+      background-color: var(--button-background-hover);
+    }
+  }
+
+  &:active {
+    background-color: var(--button-background-hover);
+  }
+}

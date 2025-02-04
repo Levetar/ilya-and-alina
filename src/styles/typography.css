@@ -1,0 +1,27 @@
+.font-great-vibes {
+  font-family: var(--font-great-vibes);
+  font-weight: 400;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.font-klee-one {
+  font-family: var(--font-klee-one);
+  font-weight: 400;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.font-fira-sans-light {
+  font-family: var(--font-fira-sans);
+  font-weight: 300;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;  
+}
+
+.font-fira-sans-regular {
+  font-family: var(--font-fira-sans);
+  font-weight: 400;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;  
+}

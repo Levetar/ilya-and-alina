@@ -7,6 +7,7 @@ import 'normalize.css';
 import './styles/variables.css';
 import './styles/media.css';
 import './styles/reboot.css';
+import './styles/fonts.css';
 
 ReactDOM.render(
   <BrowserRouter>

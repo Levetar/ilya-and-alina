@@ -1,0 +1,123 @@
+@import '../../../styles/typography.css';
+
+.root {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: var(--grid-content-fluid);
+  height: 100vh;
+  max-height: 836px;
+  min-height: 650px;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 108px var(--grid-padding-mobile) 15px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (--mobile-large) {
+    padding: 108px var(--grid-padding) 30px;
+  }
+}
+
+.title {
+  composes: font-great-vibes;
+  margin-bottom: 30px;
+  font-size: 52px;
+  line-height: 30px;
+  white-space: nowrap;
+
+  @media (--mobile-large) {
+    margin-bottom: 41px;
+    font-size: 72px;
+    line-height: 50px;
+  }
+}
+
+.titleSpan {
+  composes: font-klee-one;
+  font-size: 28px;
+  line-height: 20px;
+
+  @media (--mobile-large) {
+    font-size: 48px;
+    line-height: 50px;
+  }
+}
+
+.dayText {
+  composes: font-fira-sans-regular;
+  padding-right: 10%;
+  font-size: 15px;
+  line-height: 25px;
+  white-space: nowrap;
+
+  @media (--mobile-large) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.dayTextSpan {
+  font-size: 30px;
+
+  @media (--mobile-large) {
+    font-size: 40px;
+  }
+}
+
+.yearText {
+  composes: font-fira-sans-regular;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 25px;
+
+  @media (--mobile-large) {
+    margin-bottom: 31px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: auto;
+  animation: arrowShake 2.5s ease-in-out infinite;
+}
+
+@keyframes arrowShake {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(5px);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
