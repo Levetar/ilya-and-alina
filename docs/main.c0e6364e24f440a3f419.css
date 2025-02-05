@@ -354,9 +354,9 @@
 
 @media (min-width: 480px){.bhqpr{font-size:16px;line-height:20px}}
 
-.bhqpr+.bhqpr{margin-top:14px}
+.bhqpr+.bhqpr{margin-top:4.4vw}
 
-@media (min-width: 480px){.bhqpr+.bhqpr{margin-top:4.4vw}}
+@media (min-width: 480px){.bhqpr+.bhqpr{margin-top:14px}}
 
 .b5tNN {
   font-family: var(--font-great-vibes);
@@ -476,7 +476,13 @@
 
 @media (min-width: 480px){._G69x{margin-bottom:23px;font-size:18px;line-height:20px}}
 
-.pCei_{padding:2px 10px;width:100%;height:30px;font-size:13px;border:1px solid rgba(57,57,57,0.7);border-radius:30px}
+.pCei_,.vo1cq{padding:2px 15px;width:100%;height:30px;font-size:13px;border:1px solid rgba(57,57,57,0.7);border-radius:30px}
+
+.p6kLY{position:relative;width:100%}
+
+.vo1cq{-webkit-appearance:none;-moz-appearance:none;appearance:none;position:relative;padding-right:40px}
+
+.BTa2U{position:absolute;top:50%;right:10px;transform:translateY(-50%);width:20px;height:auto;pointer-events:none}
 
 .UQHRx,.ByttM{padding-left:4vw;position:relative;display:flex;align-items:center;font-size:3.75vw;line-height:4vw;cursor:pointer}
 
@@ -484,7 +490,11 @@
 
 .UQHRx+.UQHRx{margin-top:2vw}
 
-.ByttM+.ByttM{margin-top:18px}
+@media (min-width: 480px){.UQHRx+.UQHRx{margin-top:10px}}
+
+.ByttM+.ByttM{margin-top:3.75vw}
+
+@media (min-width: 480px){.ByttM+.ByttM{margin-top:18px}}
 
 .la1ok,.xo_EO{position:absolute;width:0;height:0;pointer-events:none;opacity:0}
 
@@ -508,13 +518,15 @@
 
 @media (min-width: 480px){.XSsBU{font-size:18px;line-height:20px}}
 
-.hkVAC{margin:auto;padding:5px;display:flex;align-items:center;justify-content:center;width:auto;min-width:211px;height:44px;font-size:16px;line-height:20px;text-decoration:none;color:var(--button-color);background-color:var(--button-background);border-radius:30px;transition:initial}
+.hkVAC{margin:auto;padding:5px;display:flex;align-items:center;justify-content:center;width:auto;min-width:211px;height:44px;font-size:16px;line-height:20px;text-decoration:none;color:var(--button-color);background-color:var(--button-background);border-radius:30px;transition:initial;cursor:pointer}
 
 @media (pointer: fine){.hkVAC{transition:background-color .2s linear}}
 
 @media (pointer: fine){.hkVAC:hover{background-color:var(--button-background-hover)}}
 
 .hkVAC:active{background-color:var(--button-background-hover)}
+
+.hkVAC:disabled{pointer-events:none;opacity:.6}
 
 .mLDdJ{font-size:3.77vw;line-height:4vw;text-align:center}
 
@@ -533,4 +545,4 @@
 @font-face{font-family:'FiraSans';font-weight:300;src:url(assets/fonts/FiraSans-Light.ttf)}@font-face{font-family:'FiraSans';font-weight:400;src:url(assets/fonts/FiraSans-Regular.ttf)}@font-face{font-family:'GreatVibes';src:url(assets/fonts/GreatVibes-Regular.ttf)}@font-face{font-family:'KleeOne';src:url(assets/fonts/KleeOne-Regular.ttf)}
 
 
-/*# sourceMappingURL=main.dde22861db5777f00b01.css.map*/
+/*# sourceMappingURL=main.c0e6364e24f440a3f419.css.map*/

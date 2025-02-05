@@ -78,10 +78,10 @@
   }
 
   & + & {
-    margin-top: 14px;
+    margin-top: 4.4vw;
 
     @media (--mobile-large) {
-      margin-top: 4.4vw;
+      margin-top: 14px;
     }
   }
 }
