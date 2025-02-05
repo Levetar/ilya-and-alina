@@ -114,7 +114,7 @@
 
 @keyframes wRRKj{0%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(5px)}100%{transform:translateX(-50%) translateY(0)}}
 
-.HqECG{position:absolute;height:auto}.HzJkR{left:calc(-1 * var(--grid-padding-mobile))}@media (min-width: 480px){.HzJkR{left:calc(-1 * var(--grid-padding))}}.pzRrB{right:calc(-1 * var(--grid-padding-mobile))}@media (min-width: 480px){.pzRrB{right:calc(-1 * var(--grid-padding))}}
+.HqECG{position:absolute;height:auto;opacity:0}.ZtrAm{animation:jjkDV 1s ease-in forwards}.HzJkR{left:calc(-1 * var(--grid-padding-mobile))}@media (min-width: 480px){.HzJkR{left:calc(-1 * var(--grid-padding))}}.pzRrB{right:calc(-1 * var(--grid-padding-mobile))}@media (min-width: 480px){.pzRrB{right:calc(-1 * var(--grid-padding))}}@keyframes jjkDV{0%{opacity:0}100%{opacity:1}}
 
 .t8jgj {
   font-family: var(--font-great-vibes);
@@ -490,11 +490,19 @@
 
 .bzRti{position:absolute;top:50%;left:0;transform:translateY(-50%);width:3.125vw;height:3.125vw;border-radius:50%;border:1px solid rgba(57,57,57,0.7)}
 
+@media (min-width: 480px){.bzRti{width:15px;height:15px}}
+
 .la1ok:checked+.bzRti::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:1.668vw;height:1.668vw;border-radius:50%;background-color:rgba(57,57,57,0.7)}
+
+@media (min-width: 480px){.la1ok:checked+.bzRti::before{width:8px;height:8px}}
 
 .LtWrr{position:absolute;top:50%;left:0;transform:translateY(-50%);width:3.125vw;height:3.125vw;border:1px solid rgba(57,57,57,0.7)}
 
+@media (min-width: 480px){.LtWrr{width:15px;height:15px}}
+
 .xo_EO:checked+.LtWrr::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:1.668vw;height:1.668vw;background-color:rgba(57,57,57,0.7)}
+
+@media (min-width: 480px){.xo_EO:checked+.LtWrr::before{width:8px;height:8px}}
 
 .XSsBU{font-size:3.78vw;line-height:4vw;text-align:center}
 
@@ -525,4 +533,4 @@
 @font-face{font-family:'FiraSans';font-weight:300;src:url(assets/fonts/FiraSans-Light.ttf)}@font-face{font-family:'FiraSans';font-weight:400;src:url(assets/fonts/FiraSans-Regular.ttf)}@font-face{font-family:'GreatVibes';src:url(assets/fonts/GreatVibes-Regular.ttf)}@font-face{font-family:'KleeOne';src:url(assets/fonts/KleeOne-Regular.ttf)}
 
 
-/*# sourceMappingURL=main.15dd9bca236e977a6a21.css.map*/
+/*# sourceMappingURL=main.dde22861db5777f00b01.css.map*/

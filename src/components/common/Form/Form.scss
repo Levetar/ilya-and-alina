@@ -156,6 +156,11 @@
   height: 3.125vw;
   border-radius: 50%;
   border: 1px solid rgba(57, 57, 57, 0.7);
+
+  @media (--mobile-large) {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .radio:checked + .customRadio::before {
@@ -168,6 +173,11 @@
   height: 1.668vw;
   border-radius: 50%;
   background-color: rgba(57, 57, 57, 0.7);
+
+  @media (--mobile-large) {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .customCheckbox {
@@ -178,6 +188,11 @@
   width: 3.125vw;
   height: 3.125vw;
   border: 1px solid rgba(57, 57, 57, 0.7);
+
+  @media (--mobile-large) {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .checkbox:checked + .customCheckbox::before {
@@ -189,6 +204,11 @@
   width: 1.668vw;
   height: 1.668vw;
   background-color: rgba(57, 57, 57, 0.7);
+
+  @media (--mobile-large) {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .formTitle {
