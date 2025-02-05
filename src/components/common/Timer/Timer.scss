@@ -8,11 +8,12 @@
 
 .title {
   composes: font-fira-sans-regular;
-  margin-bottom: 15px;
-  font-size: 12px;
-  line-height: 15px;
+  margin-bottom: 3.1vw;
+  font-size: 3.12vw;
+  line-height: 6.3vw;
 
   @media (--mobile-large) {
+    margin-bottom: 15px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -28,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70px;
+  width: 16.667vw;
 
   @media (--mobile-large) {
     width: 80px;
@@ -37,9 +38,9 @@
 
 .number {
   composes: font-fira-sans-regular;
-  margin-bottom: 3px;
-  font-size: 22px;
-  line-height: 12px;
+  margin-bottom: 1.1vw;
+  font-size: 6.3vw;
+  line-height: 4vw;
   font-variant-numeric: lining-nums tabular-nums;
 
   @media (--mobile-large) {
@@ -51,8 +52,8 @@
 
 .text {
   composes: font-fira-sans-regular;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 3.1vw;
+  line-height: 4vw;
 
   @media (--mobile-large) {
     font-size: 14px;

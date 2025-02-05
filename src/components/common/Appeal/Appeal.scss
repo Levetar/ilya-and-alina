@@ -10,14 +10,14 @@
 }
 
 .image {
-  top: -31px;
+  top: -11.4%;
   width: 131px;
 }
 
 .title {
   composes: font-great-vibes;
-  margin-bottom: 28px;
-  font-size: 44px;
+  margin-bottom: 10vw;
+  font-size: 13.3vw;
   line-height: 1;
 
   @media (--mobile-large) {
@@ -28,8 +28,8 @@
 
 .description {
   composes: font-fira-sans-regular;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 4.8vw;
+  line-height: 6.6vw;
   white-space: break-spaces;
 
   @media (--mobile-large) {

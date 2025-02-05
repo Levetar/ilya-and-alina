@@ -25,12 +25,12 @@ export const Form = ({className}) => (
       <div className={s.item}>
         <span className={s.itemTitle}>Вы&nbsp;сможете присутствовать на&nbsp;торжестве?</span>
         <label className={s.labelRadio}>
-          <input type="radio" id="come_yes" name="come" required className={s.radio} />
+          <input type="radio" id="come_yes" name="come" className={s.radio} />
           <span className={s.customRadio} />
           да, обязательно приду
         </label>
         <label className={s.labelRadio}>
-          <input type="radio" id="come_no" name="come" required className={s.radio} />
+          <input type="radio" id="come_no" name="come" className={s.radio} />
           <span className={s.customRadio} />
           к&nbsp;сожалению, не&nbsp;смогу придти
         </label>
@@ -41,44 +41,44 @@ export const Form = ({className}) => (
       <div className={s.item}>
         <label className={s.labelText}>
           <span className={s.itemTitle}>Горячее блюдо</span>
-          <input type="text" id="fio" name="fio" required className={s.input} />
+          <input type="text" id="fio" name="fio" className={s.input} />
         </label>
       </div>
       <div className={s.item}>
         <label className={s.labelText}>
           <span className={s.itemTitle}>Салат</span>
-          <input type="text" id="fio" name="fio" required className={s.input} />
+          <input type="text" id="fio" name="fio" className={s.input} />
         </label>
       </div>
       <div className={s.item}>
         <span className={s.itemTitle}>Алкоголь</span>
         <label className={s.labelCheckbox}>
-          <input type="checkbox" id="alco_wine_red" name="alco_wine_red" required className={s.checkbox} />
+          <input type="checkbox" id="alco_wine_red" name="alco_wine_red" className={s.checkbox} />
           <span className={s.customCheckbox} />
           Вино красное
         </label>
         <label className={s.labelCheckbox}>
-          <input type="checkbox" id="alco_wine_white" name="alco_wine_white" required className={s.checkbox} />
+          <input type="checkbox" id="alco_wine_white" name="alco_wine_white" className={s.checkbox} />
           <span className={s.customCheckbox} />
           Вино белое
         </label>
         <label className={s.labelCheckbox}>
-          <input type="checkbox" id="alco_samogon" name="alco_samogon" required className={s.checkbox} />
+          <input type="checkbox" id="alco_samogon" name="alco_samogon" className={s.checkbox} />
           <span className={s.customCheckbox} />
           Самогонка
         </label>
         <label className={s.labelCheckbox}>
-          <input type="checkbox" id="alco_vodka" name="alco_vodka" required className={s.checkbox} />
+          <input type="checkbox" id="alco_vodka" name="alco_vodka" className={s.checkbox} />
           <span className={s.customCheckbox} />
           Водка
         </label>
         <label className={s.labelCheckbox}>
-          <input type="checkbox" id="alco_eger" name="alco_eger" required className={s.checkbox} />
+          <input type="checkbox" id="alco_eger" name="alco_eger" className={s.checkbox} />
           <span className={s.customCheckbox} />
           Егермейстер
         </label>
         <label className={s.labelCheckbox}>
-          <input type="checkbox" id="alco_non_alco" name="alco_non_alco" required className={s.checkbox} />
+          <input type="checkbox" id="alco_non_alco" name="alco_non_alco" className={s.checkbox} />
           <span className={s.customCheckbox} />
           безалкогольные напитки
         </label>

@@ -17,7 +17,7 @@
   --color-text: #393939;
 
   /* grid layout */
-  --grid-padding-mobile: 22px;
+  --grid-padding-mobile: 10.834vw;
   --grid-padding: 52px;
   --grid-content-fluid: calc(376px + 2 * var(--grid-padding));
 }

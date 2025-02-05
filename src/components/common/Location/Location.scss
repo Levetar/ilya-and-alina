@@ -10,12 +10,12 @@
 
 .imageFlower4 {
   top: 50%;
-  transform: translateY(-50%) translateY(-63px);
+  transform: translateY(-50%) translateY(-19%);
   width: 92px;
 }
 
 .imageFlower1 {
-  bottom: 265px;
+  bottom: 25.8%;
   width: 131px;
 }
 
@@ -28,14 +28,18 @@
   text-align: center;
 
   & + & {
-    margin-top: 28px;
+    margin-top: 6.2vw;
+
+    @media (--mobile-large) {
+      margin-top: 28px;
+    }
   }
 }
 
 .title {
   composes: font-great-vibes;
-  margin-bottom: 10px;
-  font-size: 40px;
+  margin-bottom: 4vw;
+  font-size: 12.53vw;
   line-height: 1;
 
   @media (--mobile-large) {
@@ -45,19 +49,24 @@
 }
 
 .image {
-  margin-bottom: 11px;
+  margin-bottom: 2vw;
   width: 100%;
   height: auto;
+
+  @media (--mobile-large) {
+    margin-bottom: 11px;
+  }
 }
 
 .name {
   composes: font-fira-sans-regular;
-  margin-bottom: 2px;
-  font-size: 18px;
-  line-height: 27px;
+  margin-bottom: 0.4vw;
+  font-size: 5vw;
+  line-height: 6.6vw;
   white-space: break-spaces;
 
   @media (--mobile-large) {
+    margin-bottom: 2px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -65,8 +74,8 @@
 
 .address {
   composes: font-fira-sans-light;
-  font-size: 12px;
-  line-height: 27px;
+  font-size: 3.34vw;
+  line-height: 6.6vw;
 
   @media (--mobile-large) {
     font-size: 16px;
