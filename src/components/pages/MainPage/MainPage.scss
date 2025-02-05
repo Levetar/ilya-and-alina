@@ -25,21 +25,41 @@
 }
 
 .appeal {
-  margin-bottom: 26px;
+  margin-bottom: 5.5vw;
+
+  @media (--mobile-large) {
+    margin-bottom: 26px;
+  }
 }
 
 .calendar {
-  margin-bottom: 88px;
+  margin-bottom: 18.4vw;
+
+  @media (--mobile-large) {
+    margin-bottom: 88px;
+  }
 }
 
 .location {
-  margin-bottom: 43px;
+  margin-bottom: 9vw;
+
+  @media (--mobile-large) {
+    margin-bottom: 43px;
+  }
 }
 
 .wishes {
-  margin-bottom: 50px;
+  margin-bottom: 10.5vw;
+
+  @media (--mobile-large) {
+    margin-bottom: 50px;
+  }
 }
 
 .chat {
-  margin-bottom: 65px;
+  margin-bottom: 13.2vw;
+
+  @media (--mobile-large) {
+    margin-bottom: 65px;
+  }
 }

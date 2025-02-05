@@ -9,20 +9,20 @@
 }
 
 .imageFlower2 {
-  top: -43px;
+  top: -8.3%;
   width: 108px;
 }
 
 .imageFlower3 {
-  bottom: -148px;
+  bottom: -28.3%;
   width: 162px;
 }
 
 .title {
   composes: font-great-vibes;
   position: relative;
-  margin-bottom: 8px;
-  font-size: 44px;
+  margin-bottom: 2.4vw;
+  font-size: 13.3vw;
   line-height: 1;
   text-align: center;
 
@@ -34,7 +34,7 @@
 
 .descriptionWrapper {
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 3.7vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,8 +47,8 @@
 
 .description {
   composes: font-fira-sans-regular;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 4.76vw;
+  line-height: 6.6vw;
   white-space: break-spaces;
 
   @media (--mobile-large) {
@@ -57,7 +57,7 @@
   }
 
   & + & {
-    margin-top: 20px;
+    margin-top: 6.9vw;
 
     @media (--mobile-large) {
       margin-top: 34px;
@@ -67,9 +67,9 @@
 
 .calendarTitle {
   composes: font-great-vibes;
-  margin-bottom: 4px;
-  font-size: 18px;
-  line-height: 26px;
+  margin-bottom: 1.4vw;
+  font-size: 5.5vw;
+  line-height: 6.6vw;
 
   @media (--mobile-large) {
     margin-bottom: 8px;

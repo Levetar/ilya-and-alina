@@ -41,9 +41,9 @@
 
 .title {
   composes: font-great-vibes;
-  margin-bottom: 30px;
-  font-size: 52px;
-  line-height: 30px;
+  margin-bottom: 8.5vw;
+  font-size: 15vw;
+  line-height: 10.3vw;
   white-space: nowrap;
 
   @media (--mobile-large) {
@@ -67,8 +67,8 @@
 .dayText {
   composes: font-fira-sans-regular;
   padding-right: 10%;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 4.2vw;
+  line-height: 6.3vw;
   white-space: nowrap;
 
   @media (--mobile-large) {
@@ -78,7 +78,7 @@
 }
 
 .dayTextSpan {
-  font-size: 30px;
+  font-size: 8.3vw;
 
   @media (--mobile-large) {
     font-size: 40px;
@@ -87,9 +87,9 @@
 
 .yearText {
   composes: font-fira-sans-regular;
-  margin-bottom: 20px;
-  font-size: 15px;
-  line-height: 25px;
+  margin-bottom: 6.5vw;
+  font-size: 4.1vw;
+  line-height: 6.3vw;
 
   @media (--mobile-large) {
     margin-bottom: 31px;
