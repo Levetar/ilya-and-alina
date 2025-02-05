@@ -38,8 +38,8 @@ export const Calendar = ({className}) => (
       <div className={s.calendarDays}>
         {CALENDAR_DAYS.map((week, index) => (
           <div key={index} className={s.calendarWeek}>
-            {week.map((day) => (
-              <div key={day} className={s.calendarDay}>
+            {week.map((day, dIndex) => (
+              <div key={dIndex} className={s.calendarDay}>
                 {day === '15' ? (
                   <>
                     <img src={heartSrc} alt="День свадьбы" className={s.imageHeart} />

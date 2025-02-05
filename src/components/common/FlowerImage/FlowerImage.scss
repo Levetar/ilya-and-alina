@@ -1,6 +1,11 @@
 .root {
   position: absolute;
   height: auto;
+  opacity: 0;
+}
+
+.visible {
+  animation: showImage 1s ease-in forwards;
 }
 
 .rootLeft {
@@ -16,5 +21,15 @@
 
   @media (--mobile-large) {
     right: calc(-1 * var(--grid-padding));
+  }
+}
+
+@keyframes showImage {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
