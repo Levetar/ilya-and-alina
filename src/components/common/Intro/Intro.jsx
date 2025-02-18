@@ -1,4 +1,5 @@
 import React from 'react';
+import Div100vh from 'react-div-100vh';
 import imageSrc from '../../../images/intro.jpg';
 import arrowSrc from '../../../images/arrow.svg';
 import {Timer} from '../Timer/Timer';
@@ -6,7 +7,7 @@ import {Timer} from '../Timer/Timer';
 import s from './Intro.scss';
 
 export const Intro = () => (
-  <section className={s.root}>
+  <Div100vh className={s.root}>
     <img src={imageSrc} alt="" className={s.image} />
     <div className={s.content}>
       <h1 className={s.title}>
@@ -19,5 +20,5 @@ export const Intro = () => (
       <Timer />
     </div>
     <img src={arrowSrc} alt="" className={s.arrow} />
-  </section>
+  </Div100vh>
 );
