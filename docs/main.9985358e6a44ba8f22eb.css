@@ -82,11 +82,13 @@
           text-decoration-skip-ink: none;  
 }
 
-.nmm4l{overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;width:100%;max-width:var(--grid-content-fluid);max-height:836px;min-height:650px}
+.nmm4l{overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;width:100%;max-height:100vh;min-height:550px}
 
-._MrZd{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+@media (min-width: 480px){.nmm4l{min-height:750px}}
 
-.TEk9V{padding:108px var(--grid-padding-mobile) 15px;position:relative;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center}
+._MrZd{position:relative;width:100%;max-width:var(--grid-content-fluid);height:auto}
+
+.TEk9V{padding:108px var(--grid-padding-mobile) 15px;position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center}
 
 @media (min-width: 480px){.TEk9V{padding:108px var(--grid-padding) 30px}}
 
@@ -100,7 +102,7 @@
 
 .L8qnP{padding-right:10%;font-size:4.2vw;line-height:6.3vw;white-space:nowrap}
 
-@media (min-width: 480px){.L8qnP{font-size:20px;line-height:30px}}
+@media (min-width: 480px){.L8qnP{padding-right:38px;font-size:20px;line-height:30px}}
 
 .vgi48{font-size:8.3vw}
 
@@ -545,4 +547,4 @@
 @font-face{font-family:'FiraSans';font-weight:300;src:url(assets/fonts/FiraSans-Light.ttf)}@font-face{font-family:'FiraSans';font-weight:400;src:url(assets/fonts/FiraSans-Regular.ttf)}@font-face{font-family:'GreatVibes';src:url(assets/fonts/GreatVibes-Regular.ttf)}@font-face{font-family:'KleeOne';src:url(assets/fonts/KleeOne-Regular.ttf)}
 
 
-/*# sourceMappingURL=main.143cc071c2fbefe12cdd.css.map*/
+/*# sourceMappingURL=main.9985358e6a44ba8f22eb.css.map*/
