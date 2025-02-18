@@ -45,12 +45,19 @@ export const Form = ({className}) => {
         <div className={s.item}>
           <span className={s.itemTitle}>Вы&nbsp;сможете присутствовать на&nbsp;торжестве?</span>
           <label className={s.labelRadio}>
-            <input type="radio" id="come_yes" name="come" value="да, обязательно приду" className={s.radio} />
+            <input type="radio" id="come_yes" name="come" value="да, обязательно приду" required className={s.radio} />
             <span className={s.customRadio} />
             да, обязательно приду
           </label>
           <label className={s.labelRadio}>
-            <input type="radio" id="come_no" name="come" value="к сожалению, не смогу придти" className={s.radio} />
+            <input
+              type="radio"
+              id="come_no"
+              name="come"
+              value="к сожалению, не смогу придти"
+              required
+              className={s.radio}
+            />
             <span className={s.customRadio} />
             к&nbsp;сожалению, не&nbsp;смогу придти
           </label>
@@ -63,24 +70,12 @@ export const Form = ({className}) => {
             <span className={s.itemTitle}>Горячее блюдо</span>
             <div className={s.selectWrapper}>
               <select size={1} name="hotDish" className={s.select}>
-                <option value="Белые трюфели">Белые трюфели</option>
-                <option value="Мраморная говядина">Мраморная говядина</option>
-                <option value="Фуа-гра">Фуа-гра</option>
-                <option value="Золотые суши и роллы с жемчугом">Золотые суши и&nbsp;роллы с&nbsp;жемчугом</option>
-              </select>
-              <ArrowIcon className={s.selectArrow} />
-            </div>
-          </label>
-        </div>
-        <div className={s.item}>
-          <label className={s.labelText}>
-            <span className={s.itemTitle}>Салат</span>
-            <div className={s.selectWrapper}>
-              <select size={1} name="salad" className={s.select}>
-                <option value="Оливье">Оливье</option>
-                <option value="Сельдь под шубой">Сельдь под шубой</option>
-                <option value="Мимоза">Мимоза</option>
-                <option value="Руккола с креветками">Руккола с креветками</option>
+                <option value="Ничего не выбрал"></option>
+                <option value="Жареха с курицей">Жареха с курицей</option>
+                <option value="Жареха со свининой">Жареха со свининой</option>
+                <option value="Паста Болоньезе">Паста Болоньезе</option>
+                <option value="Паста Карбонара">Паста Карбонара</option>
+                <option value="Плов по-Узбекски с бараниной">Плов по-Узбекски с&nbsp;бараниной</option>
               </select>
               <ArrowIcon className={s.selectArrow} />
             </div>
@@ -111,30 +106,30 @@ export const Form = ({className}) => {
             Вино белое
           </label>
           <label className={s.labelCheckbox}>
-            <input type="checkbox" id="alco_samogon" name="alco_samogon" value="Самогонка" className={s.checkbox} />
-            <span className={s.customCheckbox} />
-            Самогонка
-          </label>
-          <label className={s.labelCheckbox}>
             <input type="checkbox" id="alco_vodka" name="alco_vodka" value="Водка" className={s.checkbox} />
             <span className={s.customCheckbox} />
             Водка
           </label>
           <label className={s.labelCheckbox}>
-            <input type="checkbox" id="alco_eger" name="alco_eger" value="Егермейстер" className={s.checkbox} />
+            <input type="checkbox" id="alco_viski" name="alco_viski" value="Виски" className={s.checkbox} />
             <span className={s.customCheckbox} />
-            Егермейстер
+            Виски
+          </label>
+          <label className={s.labelCheckbox}>
+            <input type="checkbox" id="alco_djin" name="alco_djin" value="Джин" className={s.checkbox} />
+            <span className={s.customCheckbox} />
+            Джин
           </label>
           <label className={s.labelCheckbox}>
             <input
               type="checkbox"
               id="alco_non_alco"
               name="alco_non_alco"
-              value="безалкогольные напитки"
+              value="Только безалкогольные напитки"
               className={s.checkbox}
             />
             <span className={s.customCheckbox} />
-            безалкогольные напитки
+            Только безалкогольные напитки
           </label>
         </div>
         <button type="submit" disabled={isLoading} className={s.submit}>
